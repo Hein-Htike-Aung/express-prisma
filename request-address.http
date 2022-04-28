@@ -1,0 +1,31 @@
+
+### Create Address
+POST http://localhost:3000/users/address
+Content-Type: application/json
+
+{
+    "country": "korea",
+    "city": "seoul",
+    "street": "karinaStreet",
+    "userId": 1
+}
+
+
+### Create User With Address
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "xiaoting",
+    "email": "admin2@gmail.com",
+    "password": "admin",
+    "address" : {
+        "country": "xiaotingCountry",
+        "city": "xiaotingCity",
+        "street": "xiaotingStreet"
+    }
+}
+
+
+### Get All Addresses
+GET http://localhost:3000/users/address

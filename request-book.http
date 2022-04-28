@@ -1,0 +1,22 @@
+### Create Book 
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Low of Power",
+    "description": "lorem ipsum",
+    "authorId": 1
+}
+
+
+### update Book (adding Categories)
+PATCH http://localhost:3000/books/4
+Content-Type: application/json
+
+{
+    "categoryId": 4
+}
+
+
+### Get All Books
+GET http://localhost:3000/books
